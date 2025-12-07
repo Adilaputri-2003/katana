@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: ghcr.io/Adilaputri-2003/katana:latest
+        image: ghcr.io/adilaputri-2003/katana:latest
         ports:
         - containerPort: 8000
         readinessProbe:
