@@ -7,8 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Allow insecure packages (legacy project)
-RUN composer config --global --no-plugins allow-plugins.composer/audit false
-RUN composer config --global --no-plugins allow-plugins true
-RUN composer config --global --no-plugins block-insecure false
+RUN composer config --global audit.allow-insecure true
+RUN composer config --global audit.ignore ["PKSA-h74q-2n9z-j6wq"]
 
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --prefer-dist --no-interaction --no-ansi --verbose
