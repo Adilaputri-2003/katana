@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: katana-service
+  namespace: dev
+spec:
+  selector:
+    app: katana
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
+  type: ClusterIP
