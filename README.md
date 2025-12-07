@@ -1,1 +1,1 @@
-test trigger pipeline retry semoga sukses
+test trigger pipeline retry kali ini pasti sukses
