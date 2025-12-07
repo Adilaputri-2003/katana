@@ -1,1 +1,1 @@
-test trigger pipeline first
+test trigger pipeline retry
